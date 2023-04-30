@@ -1,0 +1,23 @@
+Hayvan (abstract sınıf):
+
+türAdı: String
+ağırlık: float
+yaş: int
+getDosage(): float (abstract metot)
+getFeedSchedule(): String (abstract metot)
+Atlar (Hayvan sınıfından türetilmiştir):
+
+getDosage(): float (implemente edilmiş)
+getFeedSchedule(): String (implemente edilmiş)
+Kedigiller (Hayvan sınıfından türetilmiştir):
+
+getDosage(): float (implemente edilmiş)
+getFeedSchedule(): String (implemente edilmiş)
+Kemirgenler (Hayvan sınıfından türetilmiştir):
+
+getDosage(): float (implemente edilmiş)
+getFeedSchedule(): String (implemente edilmiş)
+İlişkiler:
+
+Atlar, Kedigiller ve Kemirgenler sınıfları, Hayvan sınıfından türetilir ve 
+Hayvan sınıfındaki abstract metotları (getDosage ve getFeedSchedule) kendi gruplarına özgü algoritmalarla uygular.
