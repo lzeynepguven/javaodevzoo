@@ -1,0 +1,30 @@
+Kullanıcı:
+
+kullaniciID: int
+ad: String
+soyad: String
+email: String
+kredi: float
+aboneOl(): void
+krediSatınAl(miktar: float): void
+Abone (Kullanıcı sınıfından türetilmiştir):
+
+filmKiralama(film: Film): void
+kiralıkFilmListesi(): List<Film>
+Film:
+
+filmID: int
+ad: String
+yıl: int
+yönetmen: String
+mevcut: boolean
+kiralamaBedeli: float
+satışFiyatı: float
+talepEt(): void
+satınAl(kullanici: Kullanıcı): void
+kiralamaBedeliGüncelle(bedel: float): void
+satışFiyatıGüncelle(fiyat: float): void
+İlişkiler:
+
+Abone sınıfı, Kullanıcı sınıfından türetilir ve Kullanıcı sınıfındaki özellikleri ve metotları miras alır.
+Abone ve Film sınıfları arasında bir ilişki vardır. Abone, Film sınıfındaki filmleri kiralayabilir.
