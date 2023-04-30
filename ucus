@@ -1,0 +1,36 @@
+
+HavaYolu:
+
+havaYoluID: int
+uçaklar: List<Uçak>
+pilotlar: List<Pilot>
+uçuşlar: List<Uçuş>
+Uçak:
+
+uçakID: int
+tip: String
+durum: String (Çalışır / Onarım)
+pilotSayısı: int
+Uçuş:
+
+uçuşID: int
+kalkışHavaalanı: Havaalanı
+inişHavaalanı: Havaalanı
+kalkışSaati: Time
+inişSaati: Time
+pilot: Pilot
+yardımcıPilot: Pilot
+uçak: Uçak
+Havaalanı:
+
+havaalanıID: int
+isim: String
+Pilot:
+
+pilotID: int
+deneyimSeviyesi: int
+İlişkiler:
+
+HavaYolu sınıfı Uçak, Pilot ve Uçuş sınıflarıyla ilişkilidir.
+Uçuş sınıfı Havaalanı, Pilot ve Uçak sınıflarıyla ilişkilidir.
+Pilot sınıfı Uçuş sınıfıyla ilişkilidir.
