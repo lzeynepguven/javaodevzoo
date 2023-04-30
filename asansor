@@ -1,0 +1,44 @@
+Sınıflar ve özellikleri:
+
+Asansör:
+
+asansorID: int
+kapasite: int
+mevcutKat: int
+hedefKatlar: List<int>
+yön: Yön (enum: YUKARI, ASAGI, DUR)
+durum: Durum (enum: HAREKET, BEKLEME)
+hareketEt(): void
+katEkle(hedefKat: int): void
+kapıAcKapa(): void
+Kat:
+
+katNo: int
+kapılar: List<Kapı>
+asansorler: List<Asansör>
+asansörÇağır(yön: Yön): void
+asansörGeldi(asansor: Asansör): void
+Kapı:
+
+kapıID: int
+durum: Durum (enum: AÇIK, KAPALI)
+aç(): void
+kapa(): void
+Yolcu:
+
+yolcuID: int
+kalkışKatı: int
+varışKatı: int
+asansöreBin(asansor: Asansör): void
+asansördenIn(asansor: Asansör): void
+Saat:
+
+mevcutZaman: int
+zamanGeçir(geçenZaman: int): void
+olayEkle(olay: String): void
+İlişkiler:
+
+Asansör ve Kat sınıfları arasında bir ilişki bulunmaktadır. Her kat, birden fazla asansörün bulunduğu bir asansör listesine sahiptir.
+Kat ve Kapı sınıfları arasında bir ilişki bulunmaktadır. Her katın, her asansör için bir kapısı bulunur.
+Yolcu sınıfı, Asansör ve Kat sınıflarıyla ilişkilidir. Yolcular asansörlerle etkileşime girer ve katlarda asansörleri çağırır veya inerler.
+Saat sınıfı, simülasyondaki tüm sınıflarla ilişkilendirilebilir ve zaman geçişini kontrol eder ve olayları günlüğe kaydeder.
